@@ -92,12 +92,12 @@ $(document).ready(function() {
 		var answer = $("input[type='radio']:checked").val();
 		if (answer == questions[currentQuestion].correctChoice) {
 			numberCorrect++;
-			$('#correct', '#factHolder', '#lastQuestionFact').fadeIn(2000, function() {
+			$('#correct').fadeIn(2000, function() {
 				$(this).delay(2000).fadeOut(2000);
 			});
 		}
 		else {
-			$('#incorrect', '#factHolder', '#lastQuestionFact').fadeIn(2000, function() {
+			$('#incorrect').fadeIn(2000, function() {
 				$(this).delay(2000).fadeOut(2000);
 			});
 		}
